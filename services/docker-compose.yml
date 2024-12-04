@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  gateway:
+    build:
+      context: ./gateway_service
+    ports:
+      - "5000:5000"
+    depends_on:
+      - weather_service
+      - location_service
+
+  weather_service:
+    build:
+      context: ./weather_service
+    ports:
+      - "5001:5001"
+
+  location_service:
+    build:
+      context: ./location_service
+    ports:
+      - "5002:5002"

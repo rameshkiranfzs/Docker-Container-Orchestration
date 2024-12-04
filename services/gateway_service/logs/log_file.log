@@ -1,0 +1,119 @@
+2024-12-01 13:32:58,575 - INFO - {'username': 'admin', 'password': 'password123'}
+2024-12-01 13:32:58,581 - DEBUG - url: https://restful-booker.herokuapp.com/auth
+2024-12-01 13:32:58,581 - DEBUG - request_payload: {"username": "admin", "password": "password123"}
+2024-12-01 13:32:58,583 - DEBUG - request_headers: 
+2024-12-01 13:32:58,584 - DEBUG - request_type: POST
+2024-12-01 13:32:58,589 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:32:59,489 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 28
+2024-12-01 13:32:59,489 - DEBUG - status_code: 200
+2024-12-01 13:32:59,489 - INFO - None
+2024-12-01 13:32:59,495 - DEBUG - url: https://restful-booker.herokuapp.com/ping
+2024-12-01 13:32:59,495 - DEBUG - request_payload: 
+2024-12-01 13:32:59,495 - DEBUG - request_headers: 
+2024-12-01 13:32:59,495 - DEBUG - request_type: GET
+2024-12-01 13:32:59,495 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:00,398 - DEBUG - https://restful-booker.herokuapp.com:443 "GET /ping HTTP/1.1" 201 7
+2024-12-01 13:33:00,405 - DEBUG - status_code: 201
+2024-12-01 13:33:00,405 - INFO - --------------------------------Executing API - get_token---------------------------------------
+2024-12-01 13:33:00,405 - INFO - {'username': 'admin', 'password': 'password123'}
+2024-12-01 13:33:00,413 - DEBUG - url: https://restful-booker.herokuapp.com/auth
+2024-12-01 13:33:00,413 - DEBUG - request_payload: {"username": "admin", "password": "password123"}
+2024-12-01 13:33:00,413 - DEBUG - request_headers: 
+2024-12-01 13:33:00,415 - DEBUG - request_type: POST
+2024-12-01 13:33:00,415 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:01,289 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 28
+2024-12-01 13:33:01,289 - DEBUG - status_code: 200
+2024-12-01 13:33:01,289 - INFO - --------------------------------Executing API - test_ping_api---------------------------------------
+2024-12-01 13:33:01,295 - INFO - None
+2024-12-01 13:33:01,295 - DEBUG - url: https://restful-booker.herokuapp.com/ping
+2024-12-01 13:33:01,295 - DEBUG - request_payload: 
+2024-12-01 13:33:01,295 - DEBUG - request_headers: 
+2024-12-01 13:33:01,295 - DEBUG - request_type: GET
+2024-12-01 13:33:01,295 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:02,211 - DEBUG - https://restful-booker.herokuapp.com:443 "GET /ping HTTP/1.1" 201 7
+2024-12-01 13:33:02,211 - DEBUG - status_code: 201
+2024-12-01 13:33:02,215 - INFO - --------------------------------Executing API - get_token---------------------------------------
+2024-12-01 13:33:02,215 - INFO - {'username': 'admin', 'password': 'password123'}
+2024-12-01 13:33:02,215 - DEBUG - url: https://restful-booker.herokuapp.com/auth
+2024-12-01 13:33:02,215 - DEBUG - request_payload: {"username": "admin", "password": "password123"}
+2024-12-01 13:33:02,222 - DEBUG - request_headers: 
+2024-12-01 13:33:02,223 - DEBUG - request_type: POST
+2024-12-01 13:33:02,224 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:03,094 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 28
+2024-12-01 13:33:03,095 - DEBUG - status_code: 200
+2024-12-01 13:33:03,097 - INFO - --------------------------------Executing API - test_post_create_booking---------------------------------------
+2024-12-01 13:33:03,103 - DEBUG - url: https://restful-booker.herokuapp.com/booking
+2024-12-01 13:33:03,104 - DEBUG - request_payload: {"firstname": "ryejvl", "lastname": "nqpo", "totalprice": 4, "depositpaid": "true", "bookingdates": {"checkin": "2024-11-01", "checkout": "2024-12-31"}, "additionalneeds": "Breakfast"}
+2024-12-01 13:33:03,106 - DEBUG - request_headers: 
+2024-12-01 13:33:03,106 - DEBUG - request_type: POST
+2024-12-01 13:33:03,106 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:03,990 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /booking HTTP/1.1" 500 21
+2024-12-01 13:33:03,990 - DEBUG - Incremented Retry for (url='/booking'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2024-12-01 13:33:03,995 - DEBUG - Retry: /booking
+2024-12-01 13:33:04,205 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /booking HTTP/1.1" 500 21
+2024-12-01 13:33:04,205 - DEBUG - Incremented Retry for (url='/booking'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-12-01 13:33:04,205 - DEBUG - Retry: /booking
+2024-12-01 13:33:04,425 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /booking HTTP/1.1" 500 21
+2024-12-01 13:33:04,425 - DEBUG - Incremented Retry for (url='/booking'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-12-01 13:33:04,425 - DEBUG - Retry: /booking
+2024-12-01 13:33:04,656 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /booking HTTP/1.1" 500 21
+2024-12-01 13:33:04,656 - ERROR - Error occured:urllib3.exceptions.ResponseError: too many 500 error responses
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\urllib3\connectionpool.py", line 948, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\urllib3\connectionpool.py", line 948, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\urllib3\connectionpool.py", line 948, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\urllib3\connectionpool.py", line 938, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='restful-booker.herokuapp.com', port=443): Max retries exceeded with url: /booking (Caused by ResponseError('too many 500 error responses'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\my_repository\full_stack_automation_python\utilities\run_api.py", line 49, in run_api
+    response = session.post(url=url, headers=headers, data=payload, verify=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\my_repository\full_stack_automation_python\.venv\Lib\site-packages\requests\adapters.py", line 510, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='restful-booker.herokuapp.com', port=443): Max retries exceeded with url: /booking (Caused by ResponseError('too many 500 error responses'))
+
+2024-12-01 13:33:05,056 - INFO - --------------------------------Executing API - get_token---------------------------------------
+2024-12-01 13:33:05,057 - INFO - {'username': 'admin', 'password': 'password123'}
+2024-12-01 13:33:05,058 - DEBUG - url: https://restful-booker.herokuapp.com/auth
+2024-12-01 13:33:05,059 - DEBUG - request_payload: {"username": "admin", "password": "password123"}
+2024-12-01 13:33:05,059 - DEBUG - request_headers: 
+2024-12-01 13:33:05,060 - DEBUG - request_type: POST
+2024-12-01 13:33:05,063 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:05,946 - DEBUG - https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 28
+2024-12-01 13:33:05,946 - DEBUG - status_code: 200
+2024-12-01 13:33:05,946 - DEBUG - url: https://restful-booker.herokuapp.com/booking
+2024-12-01 13:33:05,954 - DEBUG - request_payload: 
+2024-12-01 13:33:05,955 - DEBUG - request_headers: 
+2024-12-01 13:33:05,956 - DEBUG - request_type: GET
+2024-12-01 13:33:05,956 - DEBUG - Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-12-01 13:33:06,855 - DEBUG - https://restful-booker.herokuapp.com:443 "GET /booking HTTP/1.1" 200 9311
+2024-12-01 13:33:06,855 - DEBUG - status_code: 200
